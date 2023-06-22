@@ -3,7 +3,7 @@ import axios from "axios";
 class FoodService {
   constructor() {
     this.api = axios.create({
-      baseURL: `http://localhost:5005/api/foot`,
+      baseURL: `http://localhost:5005/api/food`,
     });
   }
 
