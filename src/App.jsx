@@ -9,12 +9,14 @@ import FoodDetail from "./pages/FoodDetail";
 import CreateFoodForm from "./components/CreateFoodForm";
 import ErrorPage from "./pages/ErrorPage";
 import EditFoodForm from "./components/EditFoodForm";
+import LoginForm from "./components/FormUser";
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
+        <Route path="/" element={<LoginForm />} />
         <Route path="/crear" element={<CreateFoodForm />} />
         <Route path="/edit" element={<EditFoodForm />} />
         <Route path="/list" element={<FoodList />} />
